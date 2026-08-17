@@ -306,6 +306,13 @@ python run.py --execution-provider directml
 
 **OpenVINO™ Execution Provider (Intel)**
 
+*Windows one-click setup:* double-click `setup-openvino.bat` in the project folder. It
+creates the `venv`, installs the requirements, pairs `onnxruntime-openvino` with the
+matching `openvino` runtime, downloads the models and verifies that
+`OpenVINOExecutionProvider` is available. Afterwards start the app with
+`run-openvino.bat`. The manual steps below are only needed on other platforms or if
+you prefer doing it yourself.
+
 1. Install dependencies:
 
 ```bash

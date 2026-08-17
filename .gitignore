@@ -29,3 +29,7 @@ switch_states.json
 install.bat
 /.claude
 *.bat
+!run-cuda.bat
+!run-directml.bat
+!run-openvino.bat
+!setup-openvino.bat
