@@ -310,8 +310,11 @@ python run.py --execution-provider directml
 creates the `venv`, installs the requirements, pairs `onnxruntime-openvino` with the
 matching `openvino` runtime, downloads the models and verifies that
 `OpenVINOExecutionProvider` is available. Afterwards start the app with
-`run-openvino.bat`. The manual steps below are only needed on other platforms or if
-you prefer doing it yourself.
+`run-openvino.bat`. `insightface` is published as source only, so the script also
+installs the Microsoft C++ build tools through `winget` when they are missing (this
+triggers a UAC prompt); if that fails it points you at the manual installer. The
+manual steps below are only needed on other platforms or if you prefer doing it
+yourself.
 
 1. Install dependencies:
 
